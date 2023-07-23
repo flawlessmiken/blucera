@@ -1,0 +1,232 @@
+.row-header{
+
+    margin: 0px auto;
+    padding: 0px auto;
+
+}
+
+.row-content{
+    margin: 0px auto;
+    padding: 30px 0px 30px 0px;
+    /* border-bottom: 1px ridge; */
+    min-height: 500px;
+}
+
+.footer{
+    background-color: black;
+    margin: 0px auto;
+    min-height: 500px; 
+    padding: 100px 0px 20px 0px;
+}
+
+.jumbotron{
+    padding: 70px 30px 70px 30px;
+    margin: 0px auto;
+    background: goldenrod;
+    background: linear-gradient(to right, rgba(173, 255, 47, 0.2), rgba(255, 255, 255, 1));
+    min-height: 500px;
+    color: green;
+}
+
+.jumbotron2{
+  padding: 70px 30px 70px 30px;
+  margin: 0px auto;
+  background: goldenrod;
+  background: linear-gradient(to right, rgba(114, 196, 247, 0.2), rgba(255, 255, 255, 1));
+  min-height: 500px;
+  color: green;
+}
+
+.jumbotron3{
+  padding: 70px 30px 70px 30px;
+  margin: 0px auto;
+  background: goldenrod;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.98), rgb(1, 32, 2));
+  min-height: 600px;
+  color: green;
+}
+
+.jumbotron4{
+  padding: 70px 30px 70px 30px;
+  margin: 0px auto;
+  background: goldenrod;
+  background: linear-gradient(to right, rgba(10, 59, 171, 0.91), rgb(1, 32, 2));
+  min-height: 500px;
+  color: green;
+}
+
+.bg-image {
+  background-image: url('img/codes.jpeg');
+  background-size: cover;
+}
+
+.address{
+    font-size: 80%;
+    margin: 0px;
+    color: #0f0f0f0f;
+}
+
+body {
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+}
+
+.navbar-dark{
+background-color: black;
+
+}
+
+
+.img-fill-width {
+    width: calc(100% / 6); /* 6 images, minus 10px to account for margins */
+    /* margin: 5px; */
+     /* Add some margin to space out the images */
+    max-height: 100px; 
+    border: none; /* Remove the border */
+      padding: 0; /* Remove any padding */
+  }
+
+
+  h1, .navbar-brand, h2 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600; /* Use the font weight specified in the Google Fonts URL */
+  }
+
+
+  /* 
+  
+  for animated List of Text repacing each other 
+  
+  */
+  
+  .list-container {
+    width: 100%;
+    /* height: 120px; */
+    
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Styling for the list items */
+  .list-item {
+    display: block;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transform: translate3d(0px, -9.75rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+
+  .list-item.active {
+    opacity: 1;
+    transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  }
+
+/* 
+  for a transitioning text 
+  */
+
+    .scrolling-container {
+      width: 100%;
+      height: 60px;
+      overflow: hidden;
+      background-color: orange;
+      position: relative;
+    }
+
+    .scrolling-container2 {
+      width: 100%;
+      height: 60px;
+      overflow: hidden;
+      background-color: black;
+      position: relative;
+    }
+
+    .scrolling-text {
+      display: flex;
+      animation: scrollText 15s linear infinite; /* Adjust the animation duration as needed */
+      white-space: nowrap; /* Prevent text from wrapping to the next line */
+    }
+
+    .scrolling-text h3 {
+      margin: 0;
+      padding: 8px;
+    }
+
+    /* Keyframes animation */
+    @keyframes scrollText {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%); /* Use -50% to loop seamlessly with duplicated text */
+      }
+    }
+
+
+
+
+    .home_cta-bg-effect-wrapper {
+      position: relative;
+    }
+
+    .home_cta-bg-effect {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+/* 
+
+
+Footer
+
+
+     */
+
+
+     .complex-footer {
+      background-color: #000;
+      color: #fff;
+      padding: 30px 0;
+    }
+
+    .complex-footer a {
+      color: #fff;
+    }
+
+    /* Center the content horizontally and vertically */
+    .complex-footer .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .complex-footer .footer-column {
+      flex-basis: 25%;
+      margin-bottom: 20px;
+    }
+
+    .footer-heading {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .footer-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-list li {
+      margin-bottom: 8px;
+    }
